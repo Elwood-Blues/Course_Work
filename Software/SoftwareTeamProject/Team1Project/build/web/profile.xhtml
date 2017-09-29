@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <h:outputStylesheet name="style.css"/>
+        <title>Profile Page - #{messages.title}</title>
+    </h:head> 
+    <h:body>
+        
+        <b:navBar class="navbar-inverse navbar-fixed-top" brand="ConnecText" brandHref="about.xhtml">
+            <b:navbarLinks>
+              <!--  <b:navLink value="Register" outcome="registration"></b:navLink> -->
+              <!--  <b:navLink value="Login" outcome="index"></b:navLink> -->
+                <b:navLink value="Post" outcome="post"/>
+                <b:navLink value="Search" outcome ="search"/>
+                <b:dropMenu value="Search By">
+                    <h:form>   
+                    <b:navCommandLink value="Author" href="#" action="#{searchBean.setSearchBy('author')}"></b:navCommandLink> 
+                    <b:navCommandLink value="Title" href="#" action="#{searchBean.setSearchBy('title')}"></b:navCommandLink>
+                    <b:navCommandLink value="Class" href="#" action="#{searchBean.setSearchBy('forClass')}"></b:navCommandLink>
+                    <b:navCommandLink value="ISBN" href="#" action="#{searchBean.setSearchBy('isbn')}"></b:navCommandLink>
+                  </h:form>
+                </b:dropMenu>
+                
+            </b:navbarLinks>
+            <h:form class="navbar-form navbar-left hidden-md hidden-sm hidden-xs" role="search">
+                <div class="form-group">
+                    <b:inputText value="#{searchBean.keyword}" type="text" class="form-control" placeholder="Search"/>
+                 </div>
+                <b:commandButton value="Submit" class="btn btn-default" action="#{searchBean.searchByAction}">
+                </b:commandButton>
+                <b:commandButton value="Logout" action="#{userBean.logout}"/>
+            </h:form>
+        </b:navBar>
+        
+        <div>
+            <form>
+                <h2 class="form-signin-heading">Hello, #{userBean.currentUser.firstName()}!</h2>
+                <div id="content">
+                    <p><label>Name: #{userBean.currentUser.firstName()} #{userBean.currentUser.last}</label></p>
+                    <p><label>Email: #{userBean.email}</label></p>
+                </div>
+                <div id="books_to_give">
+                    <p><label>Your Listed Books:</label></p>
+                    <table class="table table-striped" align="center">
+                        <tr>
+                            <th class ="order-table-header">Title</th>
+                            <th class ="order-table-header">Author</th>
+                            <th class ="order-table-header">ISBN</th>
+                            <th class ="order-table-header">Class</th>
+                            <th class ="order-table-header">Edition</th>
+                            <th class ="order-table-header">Price</th>
+                            <th class ="order-table-header"></th>
+                            
+                        </tr>
+                        <tbody>
+                            <ui:repeat var="o" value="#{userBean.listedBooks}">
+                            <tr>
+                                <td>#{o.title}</td>
+                                <td>#{o.author}</td>
+                                <td>#{o.ISBN}</td>
+                                <td>#{o.forClass}</td>
+                                <td>#{o.edition}</td>
+                                <td>#{o.price}</td>
+                                <td>
+                                    <h:form>
+                                        <b:commandButton value="Remove" action="#{userBean.removeAction(o.owner, o.title)}"/>
+                                    </h:form>
+                                </td>
+                            </tr>
+                            </ui:repeat>
+                        </tbody>
+                    </table>
+                </div>              
+            </form>
+        </div>
+    </h:body>
+</html>

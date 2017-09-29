@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <h:outputStylesheet name="style.css"/>
+        <title>Create A Post - #{messages.title}</title>
+    </h:head>
+    <h:body>
+        <b:navBar class="navbar-inverse navbar-fixed-top" brand="ConnecText" brandHref="about.xhtml">
+            <b:navbarLinks>
+                <b:navLink value="Profile" rendered="#{userBean.loggedIn}" outcome="profile"/>
+                <b:navLink value="Register" rendered="#{!userBean.loggedIn}" outcome="registration"/>
+                <b:navLink value="Login" rendered="#{!userBean.loggedIn}" outcome="index"/>
+                <b:navLink value="Post" outcome ="post"/>
+                <b:navLink value="Search" outcome ="search"/>
+                <b:dropMenu value="Search By">
+                    <h:form>   
+                    <b:navCommandLink value="Author" href="#" action="#{searchBean.setSearchBy('author')}"></b:navCommandLink> 
+                    <b:navCommandLink value="Title" href="#" action="#{searchBean.setSearchBy('title')}"></b:navCommandLink>
+                    <b:navCommandLink value="Class" href="#" action="#{searchBean.setSearchBy('forClass')}"></b:navCommandLink>
+                    <b:navCommandLink value="ISBN" href="#" action="#{searchBean.setSearchBy('isbn')}"></b:navCommandLink>
+                  </h:form>
+                </b:dropMenu>
+                
+            </b:navbarLinks>
+            <h:form class="navbar-form navbar-left hidden-md hidden-sm hidden-xs" role="search">
+                <div class="form-group">
+                    <b:inputText value="#{searchBean.keyword}" type="text" class="form-control" placeholder="Search"/>
+                 </div>
+                <b:commandButton value="Submit" class="btn btn-default" action="#{searchBean.searchByAction}"/>
+                
+                <b:commandButton value="Logout" action="#{userBean.logout}"/>
+            </h:form>
+        </b:navBar>
+        
+        <div>
+            <h2>Post a book by entering the following criteria:</h2>   
+            <h:form>
+                <div class="col-xs-4">
+                
+                <p>
+                  <label>Author:</label>
+                  <b:inputText id="input_author" class="form-control" required="true" placeholder="Author" value="#{postBean.author}"
+                               requiredMessage="This is a required field"/>
+                </p>
+                <p>
+                  <label>Title:</label>
+                  <b:inputText id="input_title" class="form-control" required="true" placeholder="Title" value="#{postBean.title}"
+                               requiredMessage="This is a required field"/>
+                </p>
+                <p>
+                  <label>Class:</label>
+                  <b:inputText id="input_class" class="form-control" placeholder="Class" value="#{postBean.forClass}"/>
+                </p>
+                <p>
+                  <label>ISBN:</label>
+                  <b:inputText id="input_ISBN" class="form-control" placeholder="ISBN" value="#{postBean.ISBN}"/>
+                </p>
+                <p>
+                  <label>Edition:</label>
+                  <b:inputText id="input_edition" class="form-control" placeholder="Edition" value="#{postBean.edition}"/>
+                </p>
+                <p>
+                  <label>Price:</label>
+                  <b:inputText id="input_price" class="form-control" required="true" placeholder="Price" value="#{postBean.price}"
+                               requiredMessage="This is a required field"/>
+                </p>
+                <p>
+                    <h:commandButton value="Post" action="#{postBean.postAction(userBean.currentUser)}" class="btn btn-default"/>
+                </p>
+                </div>
+            </h:form>
+        </div>
+    </h:body>
+</html>

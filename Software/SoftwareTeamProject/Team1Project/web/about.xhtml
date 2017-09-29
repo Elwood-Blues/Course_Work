@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <h:outputStylesheet name="style.css"/>
+        <title>Log In - #{messages.title}</title>
+    </h:head>
+
+    <h:body>
+        
+        <b:navBar class="navbar-inverse navbar-fixed-top" brand="ConnecText" brandHref="about.xhtml">
+            <b:navbarLinks>
+                <b:navLink value="Login" rendered="#{!userBean.loggedIn}" outcome="index"/>
+                <b:navLink value="Profile" rendered="#{userBean.loggedIn}" outcome="profile"/>
+                <b:navLink value="Post" rendered="#{userBean.loggedIn}" outcome="post"/>
+                <b:navLink value="Register" rendered="#{!userBean.loggedIn}" outcome="registration"/>
+                <b:navLink value="Search" outcome="search"/>
+                <b:dropMenu value="Search By">
+                     <h:form>   
+                        <b:navCommandLink value="Author" href="#" action="#{searchBean.setSearchBy('author')}"></b:navCommandLink> 
+                        <b:navCommandLink value="Title" href="#" action="#{searchBean.setSearchBy('title')}"></b:navCommandLink>
+                        <b:navCommandLink value="Class" href="#" action="#{searchBean.setSearchBy('forClass')}"></b:navCommandLink>
+                        <b:navCommandLink value="ISBN" href="#" action="#{searchBean.setSearchBy('isbn')}"></b:navCommandLink>
+                     </h:form>
+                </b:dropMenu>
+                
+            </b:navbarLinks>
+            <h:form class="navbar-form navbar-left hidden-md hidden-sm hidden-xs" role="search">
+                <div class="form-group">
+                    <b:inputText value="#{searchBean.keyword}" type="text" class="form-control" placeholder="Search"/>
+                </div>
+                <b:commandButton value="Submit" class="btn btn-default" action="#{searchBean.searchByAction}"/>
+                <b:commandButton value="Logout" action="#{userBean.logout}"/>
+            </h:form>
+        </b:navBar>
+        
+        <div>
+           <h2 class="form-signin-heading">About ConnecText</h2>
+        </div>
+        <div id="content">
+           <h:outputText value="ConnecText is a forum for college students to post text books they wish to sell to other students, to save and earn more money."/>
+           <h4/>
+           <h:outputText value="Questions? Contact one of us at reedx356@d.umn.edu, pagex266@d.umn.edu, chiux199@d.umn.edu, braba006@d.umn.edu, or ellis655@d.umn.edu."/>
+        </div>
+        
+    </h:body>
+</html>

@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <h:outputStylesheet name="style.css"/>
+        <title>Register - #{messages.title}</title>
+    </h:head>
+    <h:body>
+        <b:navBar class="navbar-inverse navbar-fixed-top" brand="ConnecText" brandHref="about.xhtml">
+            <b:navbarLinks>
+              <!--  <b:navLink value="Profile" outcome="profile"></b:navLink> -->
+              <!--  <b:navLink value="Login" outcome="index"></b:navLink> -->
+              <!--  <b:navLink value="Post" outcome="post"/> -->
+                <b:navLink value="Search" outcome ="search"/>
+                <b:dropMenu value="Search By">
+                  <!--  <b:navLink value="Author" href="#" ></b:navLink> -->
+                 
+                  <h:form>   
+                    <b:navCommandLink value="Author" href="#" action="#{searchBean.setSearchBy('author')}"></b:navCommandLink> 
+                    <b:navCommandLink value="Title" href="#" action="#{searchBean.setSearchBy('title')}"></b:navCommandLink>
+                    <b:navCommandLink value="Class" href="#" action="#{searchBean.setSearchBy('forClass')}"></b:navCommandLink>
+                    <b:navCommandLink value="ISBN" href="#" action="#{searchBean.setSearchBy('isbn')}"></b:navCommandLink>
+                  </h:form>
+                </b:dropMenu>
+            </b:navbarLinks>
+            <h:form class="navbar-form navbar-left hidden-md hidden-sm hidden-xs" role="search">
+                <div class="form-group">
+                    <b:inputText value="#{searchBean.keyword}" type="text" class="form-control" placeholder="Search"/>
+                 </div>
+                <b:commandButton value="Submit" class="btn btn-default" action="#{searchBean.searchByAction}"/>
+                          
+            </h:form>
+        </b:navBar>
+        
+        
+        <div>
+            <h2 class="form-signin-heading">Register</h2>
+        </div>
+                <h:form>
+                    <div class="col-xs-4">
+                        <p> 
+                            <h:panelGroup rendered="#{userBean.alreadyExists}">
+                                <h:outputText value="Sorry, that email is already in use. Try logging in."/>
+             
+                                <b:commandButton action="index" value="Login" class="btn btn-default"/>
+              
+                            </h:panelGroup>
+                            <h:panelGroup rendered="#{!userBean.passwordsMatch}">
+                                <h:outputText value="Sorry, your passwords didn't match. Please check the spelling and try again."/>
+                            </h:panelGroup> 
+                        </p>
+                        <p>
+                            <label>Enter Email:</label>
+                            <!--<input id="input_email" name="email" type="text" class="form-control" placeholder="Email Address" required="true" value="#{userBean.email}"/>-->
+                            <b:inputText value="#{userBean.email}" type ="text" placeholder="Email Address" class="form-control" required="true"
+                                         requiredMessage="This is a required field"/>
+                        </p>
+                        <p>
+                            <label>Enter Password:</label>
+                            <b:inputSecret id="input_password1" class="form-control" required="true" placeholder="Password" value="#{userBean.password1}"
+                               requiredMessage="This is a required field"       />
+                        </p>
+                        <p>
+                            <label>Enter Password Again:</label>
+                            <b:inputSecret id="input_password2" class="form-control" required="true" placeholder="Password" value="#{userBean.password2}"
+                                           requiredMessage="This is a required field"/>
+                        </p>
+                        <p>
+                            <label>First Name:</label>
+                            <b:inputText id="input_first" class="form-control" placeholder="First Name" required="true" value="#{userBean.firstName}"
+                                         requiredMessage="This is a required field"></b:inputText>
+                        </p>
+                        <p>
+                            <label>Last Name:</label>
+                            <b:inputText id="input_last" class="form-control" placeholder="Last Name" required="true" value="#{userBean.lastName}"
+                                         requiredMessage="This is a required field"></b:inputText>
+                        </p>
+                        <p>
+                            <label>Phone Number:</label>
+                            <b:inputText id="input_num" class="form-control" placeholder="Phone Number" required="true" value="#{userBean.phoneNumber}"
+                                         requiredMessage="This is a required field"></b:inputText>
+                        </p>
+                        <p>
+                            <h:commandButton action="#{userBean.addUser}" value="Register" class="btn btn-default"/>
+                        </p> 
+                        
+                    </div>
+                </h:form>
+           <!--</form> 
+        </div> -->
+    </h:body>
+</html>
+

@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <h:outputStylesheet name="style.css"/>
+        <title>Log In - #{messages.title}</title>
+    </h:head>
+
+    <h:body>
+        
+        <b:navBar class="navbar-inverse navbar-fixed-top" brand="ConnecText" brandHref="faces/about.xhtml">
+            <b:navbarLinks>
+                
+                <b:navLink value="Profile" rendered="#{userBean.loggedIn}" outcome="profile"/>
+                <b:navLink value="Post" rendered="#{userBean.loggedIn}" outcome="post"/>
+                <b:navLink value="Register" rendered="#{!userBean.loggedIn}" outcome="registration"/>
+                <b:navLink value="Search" outcome="search"/>
+                <b:dropMenu value="Search By">
+                     <h:form>   
+                        <b:navCommandLink value="Author" href="#" action="#{searchBean.setSearchBy('author')}"></b:navCommandLink> 
+                        <b:navCommandLink value="Title" href="#" action="#{searchBean.setSearchBy('title')}"></b:navCommandLink>
+                        <b:navCommandLink value="Class" href="#" action="#{searchBean.setSearchBy('forClass')}"></b:navCommandLink>
+                        <b:navCommandLink value="ISBN" href="#" action="#{searchBean.setSearchBy('isbn')}"></b:navCommandLink>
+                     </h:form>
+                </b:dropMenu>
+                
+            </b:navbarLinks>
+            <h:form class="navbar-form navbar-left hidden-md hidden-sm hidden-xs" role="search">
+                <div class="form-group">
+                    <b:inputText value="#{searchBean.keyword}" type="text" class="form-control" placeholder="Search"/>
+                </div>
+                <b:commandButton value="Submit" class="btn btn-default" action="#{searchBean.searchByAction}"/>
+                <b:commandButton value="Logout" action="#{userBean.logout}"/>
+            </h:form>
+        </b:navBar>
+        
+        <div>
+            <h2 class="form-signin-heading">Please Sign In</h2>
+        </div>
+                <h:form>
+                    <div class="col-xs-4">
+                       <p>
+                           <h:panelGroup rendered="#{userBean.badEmail}">
+                                <h:outputText value="Sorry, we don't have that email. There was either a spelling error or you have not registered with us." />
+                           </h:panelGroup>
+                           <h:panelGroup rendered="#{userBean.badPassword}">
+                                <h:outputText value="Incorrect password" />
+                           </h:panelGroup>
+                       </p>
+                        <p>
+                            <label>Email:</label>
+                            <!--<b:inputText value="#{userBean.email}" type="text" class="form-control" placeholder="Email Address" required="true"/> -->
+                            <b:inputText value="#{userBean.email}" class="form-control" required="true" placeholder="Email Address"/>
+                            
+                        </p>
+                        <p>
+                            <label>Password:</label>
+                            <b:inputSecret value="#{userBean.loginPassword}" class="form-control" placeholder="Password" required="true"/>
+                            
+                        </p>
+                        <p>
+                            <b:commandButton action="#{userBean.login}" value="Log In"/>
+                            
+                        </p>
+                    </div>
+                </h:form>
+           <!-- </form>
+        </div> -->
+   </h:body>
+</html>
+
+
+

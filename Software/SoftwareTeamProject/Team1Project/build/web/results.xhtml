@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:b="http://bootsfaces.net/ui"
+       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+       >
+    
+    <h:head>
+        <h:outputStylesheet name="style.css"/>
+        <title>Search Posts</title>
+    </h:head>
+    <h:body>
+        <b:navBar class="navbar-inverse navbar-fixed-top" brand="ConnecText" brandHref="about.xhtml">
+            <b:navbarLinks>
+                
+                <b:navLink value="Profile" rendered="#{userBean.loggedIn}" outcome="profile"/>
+                <b:navLink value="Post" rendered="#{userBean.loggedIn}" outcome="post"/>
+                <b:navLink value="Register" rendered="#{!userBean.loggedIn}" outcome="registration"/>
+                <b:navLink value="Login" rendered="#{!userBean.loggedIn}" outcome="index"/>
+                <b:navLink value="Search" outcome ="search"/>
+                <b:dropMenu value="Search By">
+                    <h:form>   
+                    <b:navCommandLink value="Author" href="#" action="#{searchBean.setSearchBy('author')}"/> 
+                    <b:navCommandLink value="Title" href="#" action="#{searchBean.setSearchBy('title')}"/>
+                    <b:navCommandLink value="Class" href="#" action="#{searchBean.setSearchBy('forClass')}"/>
+                    <b:navCommandLink value="ISBN" href="#" action="#{searchBean.setSearchBy('isbn')}"/>
+                  </h:form>
+                </b:dropMenu>
+                
+            </b:navbarLinks>
+            <h:form class="navbar-form navbar-left hidden-md hidden-sm hidden-xs" role="search">
+                <div class="form-group">
+                    <b:inputText value="#{searchBean.keyword}" type="text" class="form-control" placeholder="Search"/>
+                 </div>
+                <b:commandButton value="Submit" class="btn btn-default" action="#{searchBean.searchByAction}"/>
+                <b:commandButton value="Logout" action="#{userBean.logout}"/>
+            </h:form>
+        </b:navBar>
+        
+        <div>
+            <form>
+                <h2>Here's what we found!</h2>
+        
+        <table class="table table-striped" align="center">
+                        <tr>
+                            <th class ="order-table-header">Title</th>
+                            <th class ="order-table-header">Author</th>
+                            <th class ="order-table-header">ISBN</th>
+                            <th class ="order-table-header">Class</th>
+                            <th class ="order-table-header">Edition</th>
+                            <th class ="order-table-header">Price</th>
+                            <th class ="order-table-header">Contact</th>
+                        </tr>
+                        <tbody>
+                            <ui:repeat var="book" value="#{searchBean.books}">
+                                 
+                            <tr>
+                              
+                            <td>#{book.title}</td>
+                            <td>#{book.author}</td>
+                            <td>#{book.ISBN}</td>
+                            <td>#{book.forClass}</td>
+                            <td>#{book.edition}</td> 
+                            <td>#{book.price}</td>
+                            <td>#{book.owner}</td>
+                                
+                            </tr>
+                            </ui:repeat>
+                        </tbody>
+                    </table>
+            </form>
+        </div>
+        
+        </h:body>
+
+</html>
