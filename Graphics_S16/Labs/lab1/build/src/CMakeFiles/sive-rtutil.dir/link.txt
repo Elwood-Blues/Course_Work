@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libsive-rtutil.a  CMakeFiles/sive-rtutil.dir/ArgumentParsing.cpp.o CMakeFiles/sive-rtutil.dir/handleGraphicsArgs.cpp.o CMakeFiles/sive-rtutil.dir/model_obj.cpp.o CMakeFiles/sive-rtutil.dir/Random.cpp.o CMakeFiles/sive-rtutil.dir/Timer.cpp.o CMakeFiles/sive-rtutil.dir/Vector3D.cpp.o CMakeFiles/sive-rtutil.dir/XMLSceneParser.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libsive-rtutil.a
