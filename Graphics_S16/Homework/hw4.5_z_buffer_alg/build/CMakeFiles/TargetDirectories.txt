@@ -1,0 +1,3 @@
+/Users/elwood/Documents/Projects/Graphics/HW4.5/build/CMakeFiles/hw4.5.dir
+/Users/elwood/Documents/Projects/Graphics/HW4.5/build/CMakeFiles/edit_cache.dir
+/Users/elwood/Documents/Projects/Graphics/HW4.5/build/CMakeFiles/rebuild_cache.dir

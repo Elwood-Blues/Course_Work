@@ -1,0 +1,3 @@
+/Users/elwood/Documents/School_Work/Graphics/HW3/build/CMakeFiles/rebuild_cache.dir
+/Users/elwood/Documents/School_Work/Graphics/HW3/build/CMakeFiles/edit_cache.dir
+/Users/elwood/Documents/School_Work/Graphics/HW3/build/CMakeFiles/hw3.dir
