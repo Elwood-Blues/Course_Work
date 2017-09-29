@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Solver Test</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="js/farmer/FarmerState.js"></script>
+        <script type="text/javascript" src="js/farmer/FarmerMove.js"></script>
+        <script type="text/javascript" src="js/farmer/FarmerProblem.js"></script>
+        <script type="text/javascript" src="js/waterjug/WaterJugState.js"></script>
+        <script type="text/javascript" src="js/waterjug/WaterJugMove.js"></script>
+        <script type="text/javascript" src="js/waterjug/WaterJugProblem.js"></script>
+        <script type="text/javascript" src="js/bridge/BridgeState.js"></script>
+        <script type="text/javascript" src="js/bridge/BridgeMove.js"></script>
+        <script type="text/javascript" src="js/bridge/BridgeProblem.js"></script>
+        <script type="text/javascript" src="js/solve.js"></script>
+        <script type="text/javascript">
+            window.onload = function() {
+                init();
+            };
+        </script>
+    </head>
+    <body>
+        <table id="problemTable" style="margin:2em">
+	  <tr>
+              <th colspan="2">Welcome to the <span id="probName"></span> Problem</th>
+	  </tr>
+	  <tr>
+              <td colspan="2" id="intro" style="width: 500px; padding-bottom:1em"></td>
+	  </tr>
+	  <tr>
+	    <th>Current State</th>
+	    <th>Possible Moves</th>
+	  </tr>
+	  <tr style="text-align: center">
+	    <td>
+                <textarea id="state"></textarea>
+	    </td>
+	    <td>
+                <table id="moveTable" style="margin-left: auto; margin-right: auto"></table>
+	    </td>
+	  </tr>
+	  <tr>
+              <th colspan="2" id="message" style="height:2em;color:red"></th>
+	  </tr>
+	  <tr>
+	    <td colspan="2" style="text-align: center">
+	      <input type="button" value="RESET" onclick="reset();"/>
+	    </td>
+	  </tr>
+	  <tr>
+	    <td style="text-align: right">Select Problem:</td>
+            <td><select id="selector" onchange="displayProblem();"></select></td>
+	  </tr>
+	</table>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BridgeState Test</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="../../js/bridge/BridgeState.js"></script>
+        <script> 
+            function assert(expression) {
+                var result = eval(expression);
+                if (!result) alert("Assertion failed: " + expression);
+            }
+            var start = new BridgeState(WEST, WEST, WEST, WEST, WEST, 0); // assume same parameter
+            alert(start.toString());                                      // order as Java version
+            var next = new BridgeState(EAST, EAST, EAST, WEST, WEST, 2);
+            alert(next.toString());
+            assert("!start.equals(next)");
+            assert("start.equals(new BridgeState(WEST, WEST, WEST, WEST, WEST, 0))");
+        </script>
+    </head>
+    <body>
+        <h4>BridgeState Test Page</h4>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BridgeMove Test</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="../../js/bridge/BridgeState.js"></script>
+        <script src="../../js/bridge/BridgeMove.js"></script>
+        <script>
+            function assert(expression) {
+                var result = eval(expression);
+                if (!result) alert("Assertion failed: " + expression);
+            }
+            var start = new BridgeState(WEST, WEST, WEST, WEST, WEST, 0); 
+            alert(start.toString());
+            var state = new BridgeMove(P1P2).doMove(start);
+            alert(state.toString());
+            assert("state.equals(new BridgeState(EAST, EAST, EAST, WEST, WEST, 2))");
+            state = new BridgeMove(P1).doMove(state);
+            alert(state.toString());
+            assert("state.equals(new BridgeState(WEST, EAST, WEST, WEST, WEST, 3))");
+            state = new BridgeMove(P5P10).doMove(state);
+            alert(state.toString());
+            assert("state.equals(new BridgeState(WEST, EAST, EAST, EAST, EAST, 13))");
+            state = new BridgeMove(P2).doMove(state);
+            alert(state.toString());
+            assert("state.equals(new BridgeState(WEST, WEST, WEST, EAST, EAST, 15))");
+            state = new BridgeMove(P1P2).doMove(state);
+            alert(state.toString());
+            assert("state.equals(new BridgeState(EAST, EAST, EAST, EAST, EAST, 17))");
+        </script>
+    </head>
+    <body>
+        <h4>BridgeMove Test Page</h4> 
+    </body>
+</html>
