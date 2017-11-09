@@ -1,0 +1,25 @@
+1)
+    Server IP: 131.212.41.127
+    Server Port: 22 (since I used scp/ssh)
+
+2)
+    Client IP: 131.212.128.194
+    Client Port: 65089
+
+3)
+    After the 3-way handshake:
+    Packet No. where the server received the file request via TCP is: Frame 60
+    Packet No. where the server begins sending the file via SSHv2 is: Frame 61
+
+9)
+    Not entirely sure what this question is asking, or perhaps its something I'm
+    not seeing in wireshark since I used SCP/SSH, but each encrypted packet entry
+    that the server sent showed a length of 1448
+
+10)
+    I'm not entirely sure on this question.  I applied the filter: 
+    'tcp.analysis.retransmission' which left no results in the wireshark window.
+    But while looking through the trace I noticed several instances of ACK signals
+    being sent from client to server for the same SEQ number, which the way I
+    understood that to mean - was that the server would see a duplicate acknowledgment
+    and retransmit that block of packets.

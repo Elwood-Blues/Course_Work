@@ -1,0 +1,1134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@akka.d.umn.edu">
+  <database-model serializer="dbm" rdbms="ORACLE" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="BRABP">
+      <ObjectId>225</ObjectId>
+      <IntrospectionTimestamp>2017-11-07.18:51:36</IntrospectionTimestamp>
+      <CreatedTimestamp>2017-09-07.20:14:23</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-07.18:47:37</ModifiedTimestamp>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="PUBLIC">
+      <ObjectId>1</ObjectId>
+    </schema>
+    <schema id="4" parent="1" name="SYS">
+      <ObjectId>0</ObjectId>
+    </schema>
+    <schema id="5" parent="1" name="SYSTEM">
+      <ObjectId>5</ObjectId>
+    </schema>
+    <schema id="6" parent="1" name="OUTLN">
+      <ObjectId>9</ObjectId>
+    </schema>
+    <schema id="7" parent="1" name="CTXSYS">
+      <ObjectId>32</ObjectId>
+    </schema>
+    <schema id="8" parent="1" name="XDB">
+      <ObjectId>34</ObjectId>
+    </schema>
+    <schema id="9" parent="1" name="ANONYMOUS">
+      <ObjectId>35</ObjectId>
+    </schema>
+    <schema id="10" parent="1" name="MDSYS">
+      <ObjectId>42</ObjectId>
+    </schema>
+    <schema id="11" parent="1" name="HR">
+      <ObjectId>43</ObjectId>
+    </schema>
+    <schema id="12" parent="1" name="FLOWS_FILES">
+      <ObjectId>44</ObjectId>
+    </schema>
+    <schema id="13" parent="1" name="APEX_PUBLIC_USER">
+      <ObjectId>45</ObjectId>
+    </schema>
+    <schema id="14" parent="1" name="APEX_040000">
+      <ObjectId>47</ObjectId>
+    </schema>
+    <schema id="15" parent="1" name="AKHAN">
+      <ObjectId>49</ObjectId>
+    </schema>
+    <schema id="16" parent="1" name="BEAU0307">
+      <ObjectId>50</ObjectId>
+    </schema>
+    <schema id="17" parent="1" name="BIBL0018">
+      <ObjectId>51</ObjectId>
+    </schema>
+    <schema id="18" parent="1" name="CUTSH020">
+      <ObjectId>52</ObjectId>
+    </schema>
+    <schema id="19" parent="1" name="DUNBA070">
+      <ObjectId>53</ObjectId>
+    </schema>
+    <schema id="20" parent="1" name="FELD0203">
+      <ObjectId>54</ObjectId>
+    </schema>
+    <schema id="21" parent="1" name="FINKX150">
+      <ObjectId>55</ObjectId>
+    </schema>
+    <schema id="22" parent="1" name="FORSB134">
+      <ObjectId>56</ObjectId>
+    </schema>
+    <schema id="23" parent="1" name="HERTI008">
+      <ObjectId>57</ObjectId>
+    </schema>
+    <schema id="24" parent="1" name="KASIR003">
+      <ObjectId>58</ObjectId>
+    </schema>
+    <schema id="25" parent="1" name="AND02586">
+      <ObjectId>59</ObjectId>
+    </schema>
+    <schema id="26" parent="1" name="APTER009">
+      <ObjectId>60</ObjectId>
+    </schema>
+    <schema id="27" parent="1" name="CASTA025">
+      <ObjectId>61</ObjectId>
+    </schema>
+    <schema id="28" parent="1" name="FREES033">
+      <ObjectId>62</ObjectId>
+    </schema>
+    <schema id="29" parent="1" name="FUER0035">
+      <ObjectId>63</ObjectId>
+    </schema>
+    <schema id="30" parent="1" name="GOLDS302">
+      <ObjectId>64</ObjectId>
+    </schema>
+    <schema id="31" parent="1" name="HANS1962">
+      <ObjectId>65</ObjectId>
+    </schema>
+    <schema id="32" parent="1" name="HICKS220">
+      <ObjectId>66</ObjectId>
+    </schema>
+    <schema id="33" parent="1" name="LIXX3503">
+      <ObjectId>67</ObjectId>
+    </schema>
+    <schema id="34" parent="1" name="NETKO003">
+      <ObjectId>68</ObjectId>
+    </schema>
+    <schema id="35" parent="1" name="PAVL0118">
+      <ObjectId>69</ObjectId>
+    </schema>
+    <schema id="36" parent="1" name="STRON125">
+      <ObjectId>70</ObjectId>
+    </schema>
+    <schema id="37" parent="1" name="RANDA248">
+      <ObjectId>71</ObjectId>
+    </schema>
+    <schema id="38" parent="1" name="RENSX005">
+      <ObjectId>72</ObjectId>
+    </schema>
+    <schema id="39" parent="1" name="SCHAF341">
+      <ObjectId>73</ObjectId>
+    </schema>
+    <schema id="40" parent="1" name="STRAU177">
+      <ObjectId>74</ObjectId>
+    </schema>
+    <schema id="41" parent="1" name="WILH0137">
+      <ObjectId>75</ObjectId>
+    </schema>
+    <schema id="42" parent="1" name="CARRU036">
+      <ObjectId>76</ObjectId>
+    </schema>
+    <schema id="43" parent="1" name="DAHLM076">
+      <ObjectId>77</ObjectId>
+    </schema>
+    <schema id="44" parent="1" name="LIXX4136">
+      <ObjectId>78</ObjectId>
+    </schema>
+    <schema id="45" parent="1" name="MCKEE144">
+      <ObjectId>79</ObjectId>
+    </schema>
+    <schema id="46" parent="1" name="ROKKE011">
+      <ObjectId>80</ObjectId>
+    </schema>
+    <schema id="47" parent="1" name="SPAGN007">
+      <ObjectId>81</ObjectId>
+    </schema>
+    <schema id="48" parent="1" name="CAMER218">
+      <ObjectId>82</ObjectId>
+    </schema>
+    <schema id="49" parent="1" name="DOTYX109">
+      <ObjectId>83</ObjectId>
+    </schema>
+    <schema id="50" parent="1" name="DUCHE027">
+      <ObjectId>84</ObjectId>
+    </schema>
+    <schema id="51" parent="1" name="ERIC1505">
+      <ObjectId>85</ObjectId>
+    </schema>
+    <schema id="52" parent="1" name="JEHLI001">
+      <ObjectId>86</ObjectId>
+    </schema>
+    <schema id="53" parent="1" name="MODUG001">
+      <ObjectId>87</ObjectId>
+    </schema>
+    <schema id="54" parent="1" name="MUHIC009">
+      <ObjectId>88</ObjectId>
+    </schema>
+    <schema id="55" parent="1" name="NADIP002">
+      <ObjectId>89</ObjectId>
+    </schema>
+    <schema id="56" parent="1" name="ORAN0022">
+      <ObjectId>90</ObjectId>
+    </schema>
+    <schema id="57" parent="1" name="OSTRO216">
+      <ObjectId>91</ObjectId>
+    </schema>
+    <schema id="58" parent="1" name="POSTO010">
+      <ObjectId>92</ObjectId>
+    </schema>
+    <schema id="59" parent="1" name="SAMUE223">
+      <ObjectId>93</ObjectId>
+    </schema>
+    <schema id="60" parent="1" name="SPODE021">
+      <ObjectId>94</ObjectId>
+    </schema>
+    <schema id="61" parent="1" name="STEEL169">
+      <ObjectId>95</ObjectId>
+    </schema>
+    <schema id="62" parent="1" name="STRAU193">
+      <ObjectId>96</ObjectId>
+    </schema>
+    <schema id="63" parent="1" name="SWAPA001">
+      <ObjectId>97</ObjectId>
+    </schema>
+    <schema id="64" parent="1" name="WENXX194">
+      <ObjectId>98</ObjectId>
+    </schema>
+    <schema id="65" parent="1" name="YANXX418">
+      <ObjectId>99</ObjectId>
+    </schema>
+    <schema id="66" parent="1" name="YUXX0248">
+      <ObjectId>100</ObjectId>
+    </schema>
+    <schema id="67" parent="1" name="ABBAS030">
+      <ObjectId>101</ObjectId>
+    </schema>
+    <schema id="68" parent="1" name="HAFEE004">
+      <ObjectId>102</ObjectId>
+    </schema>
+    <schema id="69" parent="1" name="JINDE001">
+      <ObjectId>103</ObjectId>
+    </schema>
+    <schema id="70" parent="1" name="ZAMAN013">
+      <ObjectId>104</ObjectId>
+    </schema>
+    <schema id="71" parent="1" name="GRIG0049">
+      <ObjectId>106</ObjectId>
+    </schema>
+    <schema id="72" parent="1" name="AND03526">
+      <ObjectId>107</ObjectId>
+    </schema>
+    <schema id="73" parent="1" name="GEESM005">
+      <ObjectId>108</ObjectId>
+    </schema>
+    <schema id="74" parent="1" name="WILL4385">
+      <ObjectId>109</ObjectId>
+    </schema>
+    <schema id="75" parent="1" name="AND03247">
+      <ObjectId>110</ObjectId>
+    </schema>
+    <schema id="76" parent="1" name="CERNE004">
+      <ObjectId>111</ObjectId>
+    </schema>
+    <schema id="77" parent="1" name="COXXX457">
+      <ObjectId>112</ObjectId>
+    </schema>
+    <schema id="78" parent="1" name="DEEGX008">
+      <ObjectId>113</ObjectId>
+    </schema>
+    <schema id="79" parent="1" name="EFFIN007">
+      <ObjectId>114</ObjectId>
+    </schema>
+    <schema id="80" parent="1" name="GLENN088">
+      <ObjectId>115</ObjectId>
+    </schema>
+    <schema id="81" parent="1" name="HELSE014">
+      <ObjectId>116</ObjectId>
+    </schema>
+    <schema id="82" parent="1" name="KLAAS019">
+      <ObjectId>117</ObjectId>
+    </schema>
+    <schema id="83" parent="1" name="KREBS148">
+      <ObjectId>118</ObjectId>
+    </schema>
+    <schema id="84" parent="1" name="NICKE195">
+      <ObjectId>119</ObjectId>
+    </schema>
+    <schema id="85" parent="1" name="OLSO6567">
+      <ObjectId>120</ObjectId>
+    </schema>
+    <schema id="86" parent="1" name="PROCH044">
+      <ObjectId>121</ObjectId>
+    </schema>
+    <schema id="87" parent="1" name="SUDDU008">
+      <ObjectId>122</ObjectId>
+    </schema>
+    <schema id="88" parent="1" name="WURDO003">
+      <ObjectId>123</ObjectId>
+    </schema>
+    <schema id="89" parent="1" name="YUAN0126">
+      <ObjectId>124</ObjectId>
+    </schema>
+    <schema id="90" parent="1" name="FERR0443">
+      <ObjectId>125</ObjectId>
+    </schema>
+    <schema id="91" parent="1" name="RMACLIN">
+      <ObjectId>127</ObjectId>
+    </schema>
+    <schema id="92" parent="1" name="BHATT226">
+      <ObjectId>133</ObjectId>
+    </schema>
+    <schema id="93" parent="1" name="BOWDI006">
+      <ObjectId>134</ObjectId>
+    </schema>
+    <schema id="94" parent="1" name="ELLIS655">
+      <ObjectId>135</ObjectId>
+    </schema>
+    <schema id="95" parent="1" name="FOEDE002">
+      <ObjectId>136</ObjectId>
+    </schema>
+    <schema id="96" parent="1" name="HEBLE001">
+      <ObjectId>137</ObjectId>
+    </schema>
+    <schema id="97" parent="1" name="HONKO020">
+      <ObjectId>138</ObjectId>
+    </schema>
+    <schema id="98" parent="1" name="KAPUS024">
+      <ObjectId>139</ObjectId>
+    </schema>
+    <schema id="99" parent="1" name="KROPI004">
+      <ObjectId>140</ObjectId>
+    </schema>
+    <schema id="100" parent="1" name="MART3315">
+      <ObjectId>141</ObjectId>
+    </schema>
+    <schema id="101" parent="1" name="MATTH416">
+      <ObjectId>142</ObjectId>
+    </schema>
+    <schema id="102" parent="1" name="MCBR0101">
+      <ObjectId>143</ObjectId>
+    </schema>
+    <schema id="103" parent="1" name="OLDIN002">
+      <ObjectId>144</ObjectId>
+    </schema>
+    <schema id="104" parent="1" name="PET00070">
+      <ObjectId>145</ObjectId>
+    </schema>
+    <schema id="105" parent="1" name="PHUNG025">
+      <ObjectId>146</ObjectId>
+    </schema>
+    <schema id="106" parent="1" name="RAYME005">
+      <ObjectId>147</ObjectId>
+    </schema>
+    <schema id="107" parent="1" name="REEDX356">
+      <ObjectId>148</ObjectId>
+    </schema>
+    <schema id="108" parent="1" name="SCOT0410">
+      <ObjectId>149</ObjectId>
+    </schema>
+    <schema id="109" parent="1" name="SEAVE037">
+      <ObjectId>150</ObjectId>
+    </schema>
+    <schema id="110" parent="1" name="TERHA014">
+      <ObjectId>151</ObjectId>
+    </schema>
+    <schema id="111" parent="1" name="XSCOT0410">
+      <ObjectId>160</ObjectId>
+    </schema>
+    <schema id="112" parent="1" name="ELEAL">
+      <ObjectId>161</ObjectId>
+    </schema>
+    <schema id="113" parent="1" name="JANNA">
+      <ObjectId>198</ObjectId>
+    </schema>
+    <schema id="114" parent="1" name="JMADDEN">
+      <ObjectId>199</ObjectId>
+    </schema>
+    <schema id="115" parent="1" name="DEXTE055">
+      <ObjectId>200</ObjectId>
+    </schema>
+    <schema id="116" parent="1" name="GJERS027">
+      <ObjectId>201</ObjectId>
+    </schema>
+    <schema id="117" parent="1" name="HALLB073">
+      <ObjectId>202</ObjectId>
+    </schema>
+    <schema id="118" parent="1" name="MALMS030">
+      <ObjectId>203</ObjectId>
+    </schema>
+    <schema id="119" parent="1" name="MART3710">
+      <ObjectId>204</ObjectId>
+    </schema>
+    <schema id="120" parent="1" name="NELS8526">
+      <ObjectId>205</ObjectId>
+    </schema>
+    <schema id="121" parent="1" name="NIELS627">
+      <ObjectId>206</ObjectId>
+    </schema>
+    <schema id="122" parent="1" name="NISKA032">
+      <ObjectId>207</ObjectId>
+    </schema>
+    <schema id="123" parent="1" name="VANG1792">
+      <ObjectId>208</ObjectId>
+    </schema>
+    <schema id="124" parent="1" name="WAWRZ028">
+      <ObjectId>209</ObjectId>
+    </schema>
+    <schema id="125" parent="1" name="CAMEM">
+      <ObjectId>226</ObjectId>
+    </schema>
+    <schema id="126" parent="1" name="GLENC">
+      <ObjectId>227</ObjectId>
+    </schema>
+    <schema id="127" parent="1" name="JALLM">
+      <ObjectId>228</ObjectId>
+    </schema>
+    <schema id="128" parent="1" name="JINS">
+      <ObjectId>229</ObjectId>
+    </schema>
+    <schema id="129" parent="1" name="KEMPC">
+      <ObjectId>230</ObjectId>
+    </schema>
+    <schema id="130" parent="1" name="LARDH">
+      <ObjectId>231</ObjectId>
+    </schema>
+    <schema id="131" parent="1" name="LAUC">
+      <ObjectId>232</ObjectId>
+    </schema>
+    <schema id="132" parent="1" name="LUMPJ">
+      <ObjectId>233</ObjectId>
+    </schema>
+    <schema id="133" parent="1" name="MCDOM">
+      <ObjectId>234</ObjectId>
+    </schema>
+    <schema id="134" parent="1" name="PARSC">
+      <ObjectId>235</ObjectId>
+    </schema>
+    <schema id="135" parent="1" name="PATTD">
+      <ObjectId>236</ObjectId>
+    </schema>
+    <schema id="136" parent="1" name="RICEJ">
+      <ObjectId>237</ObjectId>
+    </schema>
+    <schema id="137" parent="1" name="RUDIR">
+      <ObjectId>238</ObjectId>
+    </schema>
+    <schema id="138" parent="1" name="SCHEC">
+      <ObjectId>239</ObjectId>
+    </schema>
+    <schema id="139" parent="1" name="YUANG">
+      <ObjectId>240</ObjectId>
+    </schema>
+    <schema id="140" parent="1" name="LAUC2">
+      <ObjectId>241</ObjectId>
+    </schema>
+    <schema id="141" parent="1" name="XS$NULL">
+      <ObjectId>2147483638</ObjectId>
+    </schema>
+    <table id="142" parent="2" name="ACCIDENT">
+      <ObjectId>137057</ObjectId>
+      <CreatedTimestamp>2017-11-01.12:40:31</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-01.12:40:31</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="143" parent="2" name="BOOK_LOANS">
+      <ObjectId>134594</ObjectId>
+      <CreatedTimestamp>2017-10-17.20:53:11</CreatedTimestamp>
+      <ModifiedTimestamp>2017-10-17.20:53:11</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="144" parent="2" name="CLIENT">
+      <ObjectId>137009</ObjectId>
+      <CreatedTimestamp>2017-11-01.12:16:10</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-07.18:47:37</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="145" parent="2" name="CLIENT_PHONES">
+      <ObjectId>137011</ObjectId>
+      <CreatedTimestamp>2017-11-01.12:16:10</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-01.12:16:10</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="146" parent="2" name="EMPLOYEE">
+      <ObjectId>123612</ObjectId>
+      <CreatedTimestamp>2017-09-07.20:14:23</CreatedTimestamp>
+      <ModifiedTimestamp>2017-09-07.20:14:23</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="147" parent="2" name="IS_SUPERVISED_BY">
+      <ObjectId>123616</ObjectId>
+      <CreatedTimestamp>2017-09-07.20:14:23</CreatedTimestamp>
+      <ModifiedTimestamp>2017-09-07.20:14:23</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="148" parent="2" name="IS_SUSPECT_OF">
+      <ObjectId>129077</ObjectId>
+      <CreatedTimestamp>2017-09-15.21:25:06</CreatedTimestamp>
+      <ModifiedTimestamp>2017-09-15.21:25:06</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="149" parent="2" name="PAYMENT">
+      <ObjectId>137053</ObjectId>
+      <CreatedTimestamp>2017-11-01.12:36:50</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-01.12:36:50</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="150" parent="2" name="POLICE_OFFICER">
+      <ObjectId>129070</ObjectId>
+      <CreatedTimestamp>2017-09-15.21:25:05</CreatedTimestamp>
+      <ModifiedTimestamp>2017-09-15.21:25:05</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="151" parent="2" name="POLICY">
+      <ObjectId>137050</ObjectId>
+      <CreatedTimestamp>2017-11-01.12:31:36</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-01.12:31:36</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="152" parent="2" name="SUSPECT">
+      <ObjectId>129075</ObjectId>
+      <CreatedTimestamp>2017-09-15.21:25:06</CreatedTimestamp>
+      <ModifiedTimestamp>2017-09-15.21:25:06</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="153" parent="2" name="VEHICLE">
+      <ObjectId>137055</ObjectId>
+      <CreatedTimestamp>2017-11-01.12:40:10</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-07.14:32:20</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="154" parent="2" name="VEHICLES_IN_ACCIDENT">
+      <ObjectId>137059</ObjectId>
+      <CreatedTimestamp>2017-11-01.12:40:39</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-01.12:40:39</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="155" parent="2" name="case">
+      <ObjectId>129072</ObjectId>
+      <CreatedTimestamp>2017-09-15.21:25:05</CreatedTimestamp>
+      <ModifiedTimestamp>2017-09-15.21:25:05</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <collection-type id="156" parent="2" name="NUMSARRAY">
+      <ObjectId>134607</ObjectId>
+      <CreatedTimestamp>2017-10-17.22:31:55</CreatedTimestamp>
+      <ModifiedTimestamp>2017-10-17.22:31:55</ModifiedTimestamp>
+      <ElementType>DECIMAL(0)|0</ElementType>
+      <UpperBound>2</UpperBound>
+      <Array>1</Array>
+    </collection-type>
+    <routine id="157" parent="2" name="COMPUTE_MEAN_BOOKS">
+      <ObjectId>134593</ObjectId>
+      <RoutineKind>function</RoutineKind>
+      <CreatedTimestamp>2017-10-17.20:50:32</CreatedTimestamp>
+      <ModifiedTimestamp>2017-10-17.21:11:23</ModifiedTimestamp>
+    </routine>
+    <routine id="158" parent="2" name="COMPUTE_SD_BOOKS">
+      <ObjectId>134595</ObjectId>
+      <RoutineKind>function</RoutineKind>
+      <CreatedTimestamp>2017-10-17.21:11:23</CreatedTimestamp>
+      <ModifiedTimestamp>2017-10-17.21:49:00</ModifiedTimestamp>
+    </routine>
+    <routine id="159" parent="2" name="MEAN_AND_SD">
+      <ObjectId>134596</ObjectId>
+      <RoutineKind>procedure</RoutineKind>
+      <Invalid>1</Invalid>
+      <CreatedTimestamp>2017-10-17.21:49:01</CreatedTimestamp>
+      <ModifiedTimestamp>2017-10-17.22:31:55</ModifiedTimestamp>
+    </routine>
+    <column id="160" parent="142" name="id">
+      <Position>1</Position>
+      <DataType>VARCHAR2(120)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="161" parent="142" name="SYS_C0045683">
+      <ObjectId>137058</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-11-01.12:40:31</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-01.12:40:31</ModifiedTimestamp>
+      <TablespaceName>CS4611_F17_DATA</TablespaceName>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="162" parent="142" name="SYS_C0045683">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-01.12:40:32</ModifiedTimestamp>
+      <ColNames>id</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C0045683</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="163" parent="143" name="BOOK_ID">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0</DataType>
+    </column>
+    <column id="164" parent="143" name="CARD_NO">
+      <Position>2</Position>
+      <DataType>NUMBER(*)|0</DataType>
+    </column>
+    <column id="165" parent="144" name="SSN">
+      <Position>1</Position>
+      <DataType>NUMBER(8)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="166" parent="144" name="NAME">
+      <Position>2</Position>
+      <DataType>VARCHAR2(120)|0</DataType>
+    </column>
+    <index id="167" parent="144" name="SYS_C0045606">
+      <ObjectId>137010</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-11-01.12:16:10</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-01.12:16:10</ModifiedTimestamp>
+      <TablespaceName>CS4611_F17_DATA</TablespaceName>
+      <ColNames>SSN</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="168" parent="144" name="SYS_C0045606">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-01.12:16:10</ModifiedTimestamp>
+      <ColNames>SSN</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C0045606</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="169" parent="145" name="CLIENT_SSN">
+      <Position>1</Position>
+      <DataType>NUMBER(8)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="170" parent="145" name="PHONE_NUMBER">
+      <Position>2</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="171" parent="145" name="CLIENT_PHONES_PK">
+      <ObjectId>137012</ObjectId>
+      <CreatedTimestamp>2017-11-01.12:16:10</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-01.12:16:10</ModifiedTimestamp>
+      <TablespaceName>CS4611_F17_DATA</TablespaceName>
+      <ColNames>CLIENT_SSN
+PHONE_NUMBER</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="172" parent="145" name="CLIENT_PHONES_PK">
+      <ModifiedTimestamp>2017-11-01.12:16:10</ModifiedTimestamp>
+      <ColNames>CLIENT_SSN
+PHONE_NUMBER</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>CLIENT_PHONES_PK</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="173" parent="145" name="SYS_C0045610">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-01.12:16:10</ModifiedTimestamp>
+      <ColNames>CLIENT_SSN</ColNames>
+      <RefSchemaName>BRABP</RefSchemaName>
+      <RefTableName>CLIENT</RefTableName>
+      <RefKeyName>SYS_C0045606</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="174" parent="146" name="EMPLOYEE_NAME">
+      <Position>1</Position>
+      <DataType>VARCHAR2(120)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="175" parent="146" name="BIRTHDATE">
+      <Position>2</Position>
+      <DataType>DATE|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="176" parent="146" name="SALARY">
+      <Position>3</Position>
+      <DataType>NUMBER(9,2)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="177" parent="146" name="SYS_C0029474">
+      <ObjectId>123613</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-09-07.20:14:23</CreatedTimestamp>
+      <ModifiedTimestamp>2017-09-07.20:14:23</ModifiedTimestamp>
+      <TablespaceName>CS4611_F17_DATA</TablespaceName>
+      <ColNames>EMPLOYEE_NAME</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="178" parent="146" name="SYS_C0029474">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-09-07.20:14:23</ModifiedTimestamp>
+      <ColNames>EMPLOYEE_NAME</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C0029474</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <check id="179" parent="146" name="SYS_C0029473">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-09-07.20:14:23</ModifiedTimestamp>
+      <ColNames>SALARY</ColNames>
+      <Predicate>salary &gt;= 0</Predicate>
+    </check>
+    <column id="180" parent="147" name="NAME">
+      <Position>1</Position>
+      <DataType>VARCHAR2(120)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="181" parent="147" name="SUPERVISOR_NAME">
+      <Position>2</Position>
+      <DataType>VARCHAR2(120)|0</DataType>
+    </column>
+    <index id="182" parent="147" name="SYS_C0029480">
+      <ObjectId>123617</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-09-07.20:14:23</CreatedTimestamp>
+      <ModifiedTimestamp>2017-09-07.20:14:23</ModifiedTimestamp>
+      <TablespaceName>CS4611_F17_DATA</TablespaceName>
+      <ColNames>NAME</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="183" parent="147" name="SYS_C0029480">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-09-07.20:14:23</ModifiedTimestamp>
+      <ColNames>NAME</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C0029480</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="184" parent="147" name="SYS_C0029482">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-09-07.20:14:24</ModifiedTimestamp>
+      <ColNames>NAME</ColNames>
+      <RefSchemaName>BRABP</RefSchemaName>
+      <RefTableName>EMPLOYEE</RefTableName>
+      <RefKeyName>SYS_C0029474</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="185" parent="147" name="SYS_C0029481">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-09-07.20:14:24</ModifiedTimestamp>
+      <ColNames>SUPERVISOR_NAME</ColNames>
+      <RefSchemaName>BRABP</RefSchemaName>
+      <RefTableName>EMPLOYEE</RefTableName>
+      <RefKeyName>SYS_C0029474</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="186" parent="148" name="CASE_NUM">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="187" parent="148" name="SUSPECT_ID">
+      <Position>2</Position>
+      <DataType>VARCHAR2(120)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="188" parent="148" name="IS_SUSPECT_OF_PK">
+      <ObjectId>129078</ObjectId>
+      <CreatedTimestamp>2017-09-15.21:25:06</CreatedTimestamp>
+      <ModifiedTimestamp>2017-09-15.21:25:06</ModifiedTimestamp>
+      <TablespaceName>CS4611_F17_DATA</TablespaceName>
+      <ColNames>CASE_NUM
+SUSPECT_ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="189" parent="148" name="IS_SUSPECT_OF_PK">
+      <ModifiedTimestamp>2017-09-15.21:25:06</ModifiedTimestamp>
+      <ColNames>CASE_NUM
+SUSPECT_ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>IS_SUSPECT_OF_PK</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="190" parent="148" name="ISO_FK_CASE_NUM">
+      <ModifiedTimestamp>2017-09-15.21:25:06</ModifiedTimestamp>
+      <ColNames>CASE_NUM</ColNames>
+      <RefSchemaName>BRABP</RefSchemaName>
+      <RefTableName>case</RefTableName>
+      <RefKeyName>SYS_C0039123</RefKeyName>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="191" parent="148" name="ISO_FK_SUS_ID">
+      <ModifiedTimestamp>2017-09-15.21:25:06</ModifiedTimestamp>
+      <ColNames>SUSPECT_ID</ColNames>
+      <RefSchemaName>BRABP</RefSchemaName>
+      <RefTableName>SUSPECT</RefTableName>
+      <RefKeyName>SYS_C0039131</RefKeyName>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="192" parent="149" name="POLICY_NUM">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="193" parent="149" name="PAYMENT_DATE">
+      <Position>2</Position>
+      <DataType>DATE|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="194" parent="149" name="PAYMENT_PK">
+      <ObjectId>137054</ObjectId>
+      <CreatedTimestamp>2017-11-01.12:36:50</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-01.12:36:50</ModifiedTimestamp>
+      <TablespaceName>CS4611_F17_DATA</TablespaceName>
+      <ColNames>POLICY_NUM
+PAYMENT_DATE</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="195" parent="149" name="PAYMENT_PK">
+      <ModifiedTimestamp>2017-11-01.12:36:50</ModifiedTimestamp>
+      <ColNames>POLICY_NUM
+PAYMENT_DATE</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PAYMENT_PK</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="196" parent="149" name="SYS_C0045675">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-01.12:36:51</ModifiedTimestamp>
+      <ColNames>POLICY_NUM</ColNames>
+      <RefSchemaName>BRABP</RefSchemaName>
+      <RefTableName>POLICY</RefTableName>
+      <RefKeyName>SYS_C0045670</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="197" parent="150" name="OFFICER_ID">
+      <Position>1</Position>
+      <DataType>VARCHAR2(120)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="198" parent="150" name="OFFICER_NAME">
+      <Position>2</Position>
+      <DataType>VARCHAR2(120)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="199" parent="150" name="rank">
+      <Position>3</Position>
+      <DataType>VARCHAR2(120)|0</DataType>
+    </column>
+    <column id="200" parent="150" name="DEPT_NAME">
+      <Position>4</Position>
+      <DataType>VARCHAR2(120)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="201" parent="150" name="SALARY">
+      <Position>5</Position>
+      <DataType>NUMBER(9,2)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="202" parent="150" name="SYS_C0039115">
+      <ObjectId>129071</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-09-15.21:25:05</CreatedTimestamp>
+      <ModifiedTimestamp>2017-09-15.21:25:05</ModifiedTimestamp>
+      <TablespaceName>CS4611_F17_DATA</TablespaceName>
+      <ColNames>OFFICER_ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="203" parent="150" name="SYS_C0039115">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-09-15.21:25:05</ModifiedTimestamp>
+      <ColNames>OFFICER_ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C0039115</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <check id="204" parent="150" name="SYS_C0039111">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-09-15.21:25:05</ModifiedTimestamp>
+      <ColNames>OFFICER_ID</ColNames>
+      <Predicate>LENGTH(officer_id) &lt; 120</Predicate>
+    </check>
+    <check id="205" parent="150" name="SYS_C0039112">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-09-15.21:25:05</ModifiedTimestamp>
+      <ColNames>OFFICER_NAME</ColNames>
+      <Predicate>LENGTH(officer_name) &lt; 120</Predicate>
+    </check>
+    <check id="206" parent="150" name="SYS_C0039113">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-09-15.21:25:05</ModifiedTimestamp>
+      <ColNames>rank</ColNames>
+      <Predicate>LENGTH(&quot;rank&quot;) &lt; 120</Predicate>
+    </check>
+    <check id="207" parent="150" name="SYS_C0039114">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-09-15.21:25:05</ModifiedTimestamp>
+      <ColNames>DEPT_NAME</ColNames>
+      <Predicate>LENGTH(dept_name) &lt; 120</Predicate>
+    </check>
+    <check id="208" parent="150" name="SYS_C0039110">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-09-15.21:25:05</ModifiedTimestamp>
+      <ColNames>SALARY</ColNames>
+      <Predicate>salary &gt;= 0</Predicate>
+    </check>
+    <column id="209" parent="151" name="number">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="210" parent="151" name="PDATE">
+      <Position>2</Position>
+      <DataType>DATE|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="211" parent="151" name="CLIENT_SSN">
+      <Position>3</Position>
+      <DataType>NUMBER(8)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="212" parent="151" name="SYS_C0045670">
+      <ObjectId>137051</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-11-01.12:31:36</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-01.12:31:36</ModifiedTimestamp>
+      <TablespaceName>CS4611_F17_DATA</TablespaceName>
+      <ColNames>number</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="213" parent="151" name="SYS_C0045670">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-01.12:31:36</ModifiedTimestamp>
+      <ColNames>number</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C0045670</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="214" parent="151" name="SYS_C0045671">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-01.12:31:36</ModifiedTimestamp>
+      <ColNames>CLIENT_SSN</ColNames>
+      <RefSchemaName>BRABP</RefSchemaName>
+      <RefTableName>CLIENT</RefTableName>
+      <RefKeyName>SYS_C0045606</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="215" parent="152" name="SUSPECT_ID">
+      <Position>1</Position>
+      <DataType>VARCHAR2(120)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="216" parent="152" name="name">
+      <Position>2</Position>
+      <DataType>VARCHAR2(120)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="217" parent="152" name="AGE">
+      <Position>3</Position>
+      <DataType>NUMBER(*)|0</DataType>
+    </column>
+    <column id="218" parent="152" name="description">
+      <Position>4</Position>
+      <DataType>VARCHAR2(1000)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="219" parent="152" name="SYS_C0039131">
+      <ObjectId>129076</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-09-15.21:25:06</CreatedTimestamp>
+      <ModifiedTimestamp>2017-09-15.21:25:06</ModifiedTimestamp>
+      <TablespaceName>CS4611_F17_DATA</TablespaceName>
+      <ColNames>SUSPECT_ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="220" parent="152" name="SYS_C0039131">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-09-15.21:25:06</ModifiedTimestamp>
+      <ColNames>SUSPECT_ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C0039131</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <check id="221" parent="152" name="SYS_C0039128">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-09-15.21:25:06</ModifiedTimestamp>
+      <ColNames>SUSPECT_ID</ColNames>
+      <Predicate>LENGTH(suspect_id) &lt; 120</Predicate>
+    </check>
+    <check id="222" parent="152" name="SYS_C0039129">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-09-15.21:25:06</ModifiedTimestamp>
+      <ColNames>name</ColNames>
+      <Predicate>LENGTH(&quot;name&quot;) &lt; 120</Predicate>
+    </check>
+    <check id="223" parent="152" name="SYS_C0039130">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-09-15.21:25:06</ModifiedTimestamp>
+      <ColNames>description</ColNames>
+      <Predicate>LENGTH(&quot;description&quot;) &lt; 1000</Predicate>
+    </check>
+    <column id="224" parent="153" name="VIN">
+      <Position>1</Position>
+      <DataType>VARCHAR2(120)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="225" parent="153" name="MAKE">
+      <Position>2</Position>
+      <DataType>VARCHAR2(60)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="226" parent="153" name="POLICY_NUM">
+      <Position>3</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="227" parent="153" name="SYS_C0045680">
+      <ObjectId>137056</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-11-01.12:40:10</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-01.12:40:10</ModifiedTimestamp>
+      <TablespaceName>CS4611_F17_DATA</TablespaceName>
+      <ColNames>VIN</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="228" parent="153" name="SYS_C0045680">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-01.12:40:10</ModifiedTimestamp>
+      <ColNames>VIN</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C0045680</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="229" parent="153" name="SYS_C0045681">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-01.12:40:10</ModifiedTimestamp>
+      <ColNames>POLICY_NUM</ColNames>
+      <RefSchemaName>BRABP</RefSchemaName>
+      <RefTableName>POLICY</RefTableName>
+      <RefKeyName>SYS_C0045670</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <check id="230" parent="153" name="MAKE_CHECK">
+      <ModifiedTimestamp>2017-11-07.14:32:20</ModifiedTimestamp>
+      <ColNames>MAKE</ColNames>
+      <Predicate>&quot;MAKE&quot; IN (&apos;TOYOTA&apos;, &apos;HONDA&apos;, &apos;ACURA&apos;, &apos;VOLKSWAGEN&apos;)</Predicate>
+    </check>
+    <column id="231" parent="154" name="ACCIDENT_ID">
+      <Position>1</Position>
+      <DataType>VARCHAR2(120)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="232" parent="154" name="VEHICLE_VIN">
+      <Position>2</Position>
+      <DataType>VARCHAR2(120)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="233" parent="154" name="VEH_IN_ACC_PK">
+      <ObjectId>137060</ObjectId>
+      <CreatedTimestamp>2017-11-01.12:40:39</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-01.12:40:39</ModifiedTimestamp>
+      <TablespaceName>CS4611_F17_DATA</TablespaceName>
+      <ColNames>ACCIDENT_ID
+VEHICLE_VIN</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="234" parent="154" name="VEH_IN_ACC_PK">
+      <ModifiedTimestamp>2017-11-01.12:40:39</ModifiedTimestamp>
+      <ColNames>ACCIDENT_ID
+VEHICLE_VIN</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>VEH_IN_ACC_PK</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="235" parent="154" name="SYS_C0045687">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-01.12:40:39</ModifiedTimestamp>
+      <ColNames>ACCIDENT_ID</ColNames>
+      <RefSchemaName>BRABP</RefSchemaName>
+      <RefTableName>ACCIDENT</RefTableName>
+      <RefKeyName>SYS_C0045683</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="236" parent="154" name="SYS_C0045688">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-01.12:40:39</ModifiedTimestamp>
+      <ColNames>VEHICLE_VIN</ColNames>
+      <RefSchemaName>BRABP</RefSchemaName>
+      <RefTableName>VEHICLE</RefTableName>
+      <RefKeyName>SYS_C0045680</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="237" parent="155" name="CASE_NUM">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="238" parent="155" name="date">
+      <Position>2</Position>
+      <DataType>DATE|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="239" parent="155" name="LEAD_DETECTIVE_ID">
+      <Position>3</Position>
+      <DataType>VARCHAR2(120)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="240" parent="155" name="DEPT_NAME">
+      <Position>4</Position>
+      <DataType>VARCHAR2(120)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="241" parent="155" name="CASE_PK">
+      <ObjectId>129073</ObjectId>
+      <CreatedTimestamp>2017-09-15.21:25:05</CreatedTimestamp>
+      <ModifiedTimestamp>2017-09-15.21:25:05</ModifiedTimestamp>
+      <TablespaceName>CS4611_F17_DATA</TablespaceName>
+      <ColNames>CASE_NUM
+LEAD_DETECTIVE_ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="242" parent="155" name="SYS_C0039123">
+      <ObjectId>129074</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-09-15.21:25:06</CreatedTimestamp>
+      <ModifiedTimestamp>2017-09-15.21:25:06</ModifiedTimestamp>
+      <TablespaceName>CS4611_F17_DATA</TablespaceName>
+      <ColNames>CASE_NUM</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="243" parent="155" name="CASE_PK">
+      <ModifiedTimestamp>2017-09-15.21:25:06</ModifiedTimestamp>
+      <ColNames>CASE_NUM
+LEAD_DETECTIVE_ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>CASE_PK</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="244" parent="155" name="SYS_C0039123">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-09-15.21:25:06</ModifiedTimestamp>
+      <ColNames>CASE_NUM</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C0039123</UnderlyingIndexName>
+    </key>
+    <foreign-key id="245" parent="155" name="SYS_C0039124">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-09-15.21:25:06</ModifiedTimestamp>
+      <ColNames>LEAD_DETECTIVE_ID</ColNames>
+      <RefSchemaName>BRABP</RefSchemaName>
+      <RefTableName>POLICE_OFFICER</RefTableName>
+      <RefKeyName>SYS_C0039115</RefKeyName>
+      <OnDelete>set-null</OnDelete>
+    </foreign-key>
+    <check id="246" parent="155" name="SYS_C0039120">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-09-15.21:25:05</ModifiedTimestamp>
+      <ColNames>LEAD_DETECTIVE_ID</ColNames>
+      <Predicate>LENGTH(lead_detective_id) &lt; 120</Predicate>
+    </check>
+    <check id="247" parent="155" name="SYS_C0039121">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-09-15.21:25:05</ModifiedTimestamp>
+      <ColNames>DEPT_NAME</ColNames>
+      <Predicate>LENGTH(dept_name) &lt; 120</Predicate>
+    </check>
+    <argument id="248" parent="157">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>NUMBER|0</DataType>
+    </argument>
+    <argument id="249" parent="158">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>NUMBER|0</DataType>
+    </argument>
+  </database-model>
+</dataSource>
